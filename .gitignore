@@ -1,3 +1,9 @@
+grpcJavaCourse/.idea
+grpcJavaCourse/.gradle
+
+protobufExample/.idea
+protobufExample/.gradle
+
 .settings
 target
 .project
