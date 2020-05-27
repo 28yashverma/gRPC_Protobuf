@@ -19,7 +19,7 @@ public class CalculatorClient {
         CalculatorServiceBlockingStub calculatorClient = CalculatorServiceGrpc.newBlockingStub(channel);
         Calculate calculate = Calculate.newBuilder()
                 .setFirstNumber(12)
-                .setSecondNumber(10)
+                .setSecondNumber(-110)
                 .build();
 
         CalculateRequest request = CalculateRequest.newBuilder()
