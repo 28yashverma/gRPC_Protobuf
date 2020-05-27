@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package calculate;
+option java_package = "com.proto.calculate";
+option java_multiple_files = true;
+
+message Calculate {
+    int32 firstNumber = 1;
+    int32 secondNumber = 2;
+}
+
+message CalculateRequest {
+    Calculate calculate = 1;
+}
+
+message CalculateResponse {
+    int32 sum = 1;
+}
+
+service CalculatorService {
+    rpc Calculate(CalculateRequest) returns (CalculateResponse) {};
+}
