@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package example.options;
+
+option java_package = "com.example.options"; // To define package as Java
+option java_multiple_files = true; // To segregate Code in to Multiple Java files or Classes
+
+message OptionMessageTest {
+    int32 id = 1;
+    string name = 2;
+    float weight = 3;
+    repeated int32 sample_list = 4;
+    bool is_simple = 5;
+}

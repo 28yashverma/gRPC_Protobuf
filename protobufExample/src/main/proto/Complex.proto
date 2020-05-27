@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package com.example.Complex;
+
+message Complex {
+    int32 id = 1;
+    NestedComplex oneDummy = 2;
+    repeated NestedComplex multipleDummies = 3;
+}
+
+message NestedComplex {
+    int32 id = 1;
+    string name = 2;
+}
